@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="251dp"
+        android:contentDescription="@string/imageHint"
+        android:onClick="onClick"
+        android:src="@drawable/ic_action_upload_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="279dp"
+        android:layout_height="26dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="88dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imageButton"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931"
+        app:srcCompat="@drawable/icon_send" />
+
+<!--    <com.warkiz.widget.IndicatorSeekBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:isb_indicator_color="@color/color_gray"-->
+<!--        app:isb_indicator_text_color="@color/colorAccent"-->
+<!--        app:isb_indicator_text_size="18sp"-->
+<!--        app:isb_progress="100"-->
+<!--        app:isb_seek_smoothly="true"-->
+<!--        app:isb_show_indicator="rounded_rectangle"-->
+<!--        app:isb_show_tick_marks_type="oval"-->
+<!--        app:isb_show_tick_texts="true"-->
+<!--        app:isb_thumb_color="@color/colorPrimaryDark"-->
+<!--        app:isb_thumb_size="20dp"-->
+<!--        app:isb_tick_marks_drawable="@mipmap/ic_launcher"-->
+<!--        app:isb_tick_marks_size="13dp"-->
+<!--        app:isb_tick_texts_color="@color/colorPrimary"-->
+<!--        app:isb_tick_texts_size="15sp"-->
+<!--        app:isb_ticks_count="5"-->
+<!--        app:isb_track_background_color="@color/color_gray"-->
+<!--        app:isb_track_background_size="2dp"-->
+<!--        app:isb_track_progress_color="@color/color_blue"-->
+<!--        app:isb_track_progress_size="4dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/imageView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.595" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

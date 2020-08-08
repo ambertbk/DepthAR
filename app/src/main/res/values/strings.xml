@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Ambers AR</string>
+
+    <string name="text">Text:</string>
+    <string name="textHint">Hello World!</string>
+
+    <string name="image">Image:</string>
+    <string name="imageHint">Click to Add Image</string>
+    <string name="imageButton">Image button to send text</string>
+
+    <string name="send">SEND</string>
+
+    <string name="video">Test Menu</string>
+    <string name="videoHint">Click to Take Video</string>
+
+    <string name="item1">Send Text</string>
+    <string name="subItem1">Click here to send text</string>
+
+    <string name="typing">Typing…</string>
+
+</resources>
